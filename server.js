@@ -19,7 +19,7 @@ app.post("/setscore", async (req, res) => {
     const body = req.body;
     /* Hvis body mangler data, returner status 401 missing data. */
     if (!validateBody(body)) {
-        return res.status(401).json({ message: "Missing Username/Highscore" });
+        return res.status(400).json({ message: "Missing Username/Highscore" });
     }
     /* Destrukturerer body og saniterer username */
     const { username, highscore, difficulty } = body;

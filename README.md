@@ -29,7 +29,7 @@ This endpoint allows users to set their high score for a specific difficulty lev
 #### Response
 
 - Success Response: Status code 200 with a JSON object containing a success message.
-- Error Response: Status code 401 if the request body is missing any required fields, or status code 500 if there is an internal server error.
+- Error Response: Status code 400 if the request body is missing any required fields, or status code 500 if there is an internal server error.
 
 ### POST /highscore
 
