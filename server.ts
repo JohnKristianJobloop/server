@@ -70,7 +70,7 @@ app.post("/setscore", async (req, res)=>{
 
 
 /* Endpoint for å fetche highscore for set difficulty. */
-app.post("/highscore", async (req,res)=>{
+app.get("/highscore", async (req,res)=>{
     const {difficulty} = req.body
     const data = await fetchTopTen(difficulty)
     console.log(data)
